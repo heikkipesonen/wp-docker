@@ -2,10 +2,12 @@ const gulp = require('gulp');
 const scss = require('gulp-sass');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const rename = require('gulp-rename');
 
-gulp.task('scss', () => {
+gulp.task('sass', () => {
   return gulp.src('src/index.scss')
-  .pipe(scss)
+  .pipe(scss())
+  .pipe(rename('style.css'))
   .pipe(gulp.dest('build'))
   .pipe(browserSync.stream());
 });
@@ -28,7 +30,7 @@ gulp.task('clean', () => {
 
 gulp.task('browser-sync', function() {
   browserSync.init({
-    proxy: "localhost:8080"
+    proxy: "localhost:8000"
   });
 });
 
