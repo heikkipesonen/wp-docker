@@ -45,7 +45,7 @@ gulp.task('assets-fonts', ['clean'], () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('src/assets/style/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.scss', ['sass']);
   gulp.watch('src/**/*.php', ['php-watch']);
 });
 

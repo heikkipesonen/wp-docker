@@ -17,18 +17,18 @@ add_action('init', function () {
     )
   );
 
-  register_post_type('employee',
+  register_post_type('room',
     array(
       'labels' => array(
-        'name' => __('Employees'),
-        'singular_name' => __('Employee'),
+        'name' => __('Rooms'),
+        'singular_name' => __('Room'),
       ),
       'public' => true,
       'has_archive' => false,
       'supports' => array('title', 'excerpt', 'thumbnail', 'editor'),
       'taxonomies' => array('post_tag'),
       'rewrite' => array(
-        'slug' => 'tekijat'
+        'slug' => 'huoneet'
       )
     )
   );
