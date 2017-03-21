@@ -35,7 +35,7 @@ spl_autoload_register(function ($name) {
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="icon" href="<?php  echo get_template_directory_uri(); ?>/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="<?php  echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php  echo get_template_directory_uri(); ?>/style.min.css">
 
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
