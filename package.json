@@ -1,0 +1,28 @@
+{
+  "name": "wordpress-dev-set",
+  "version": "1.0.0",
+  "description": "docker image for wp development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docker",
+    "wordpress"
+  ],
+  "contributors": [
+    {
+      "name": "Joakim Granbohm"
+    },
+    {
+      "name": "Heikki Pesonen"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "browsersync": "0.0.1-security",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
