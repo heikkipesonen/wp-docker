@@ -11,7 +11,7 @@ gulp.task('sass', () => {
   .pipe(scss())
   .pipe(cssmin())
   .pipe(rename('style.css'))
-  .pipe(rename({suffix: '.min'}))
+  // .pipe(rename({suffix: '.min'}))
   .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false

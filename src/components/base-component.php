@@ -16,12 +16,17 @@ class BaseComponent {
   }
 
   public function classNames () {
-    return implode($this->config['classNames'], ' ');
-  }
+    if ($this->config['classNames']) {
+      return implode($this->config['classNames'], ' ');
+    }
 
-  public function __toString () {
-    return $this-render();
+    return '';
   }
 
   public function render () {}
+
+  public function __toString () {
+    return $this->render();
+  }
+
 }

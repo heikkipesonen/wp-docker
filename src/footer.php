@@ -5,6 +5,9 @@
 
       </footer>
     </diV>
+
+    <?php echo new Menu() ?>
+
     <?php wp_footer(); ?>
   </body>
 </html>

@@ -14,9 +14,5 @@ function toKebab($input) {
   foreach ($ret as &$match) {
     $match = $match == strtoupper($match) ? strtolower($match) : lcfirst($match);
   }
-  return implode('_', $ret);
+  return implode('-', $ret);
 }
-
-spl_autoload_register(function ($name) {
-  include 'components/'.strtolower(toKebab($name)).'.php';
-});
